@@ -30,10 +30,12 @@ public class SeleniumHW3IntroLocatorsAssignment {
         submitBtn.click();
         //added Thread to observe the changes in the form while executing the code
         Thread.sleep(4000);
+        email.clear();
         email.sendKeys("jsmith@gmail.com");
         submitBtn.click();
         //added Thread to observe the changes in the form while executing the code
         Thread.sleep(4000);
+
         WebElement clickbtn=driver.findElement(By.linkText("Click Here."));
         clickbtn.click();
 
